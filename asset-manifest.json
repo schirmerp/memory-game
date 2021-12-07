@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memory-game/static/css/main.5cbb4c5b.chunk.css",
+    "main.css": "/memory-game/static/css/main.d1ded222.chunk.css",
     "main.js": "/memory-game/static/js/main.5fac7112.chunk.js",
     "main.js.map": "/memory-game/static/js/main.5fac7112.chunk.js.map",
     "runtime-main.js": "/memory-game/static/js/runtime-main.8e198077.js",
@@ -10,13 +10,13 @@
     "static/js/3.16a8508d.chunk.js": "/memory-game/static/js/3.16a8508d.chunk.js",
     "static/js/3.16a8508d.chunk.js.map": "/memory-game/static/js/3.16a8508d.chunk.js.map",
     "index.html": "/memory-game/index.html",
-    "static/css/main.5cbb4c5b.chunk.css.map": "/memory-game/static/css/main.5cbb4c5b.chunk.css.map",
+    "static/css/main.d1ded222.chunk.css.map": "/memory-game/static/css/main.d1ded222.chunk.css.map",
     "static/js/2.b5f62565.chunk.js.LICENSE.txt": "/memory-game/static/js/2.b5f62565.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8e198077.js",
     "static/js/2.b5f62565.chunk.js",
-    "static/css/main.5cbb4c5b.chunk.css",
+    "static/css/main.d1ded222.chunk.css",
     "static/js/main.5fac7112.chunk.js"
   ]
 }
