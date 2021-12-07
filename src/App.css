@@ -1,0 +1,49 @@
+#container{
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(at center, #3498db, #9b59b6);
+}
+.header{
+  width: 100%;
+  text-align: center;
+}
+#game-board{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 10% 0 10%;
+  justify-content: space-around;
+}
+.card{
+  border: 2px solid black;
+}
+
+
+body{
+  background: radial-gradient(at center, #3498db, #9b59b6);
+}
+.score, .high-score{
+  
+  float: right;
+  margin: 2%;
+}
+
+.big-font{
+  font-size: xxx-large, ;
+}
+.gameover{
+  color:greenyellow;
+  text-shadow: 2px 2px 2px lavender, 0 0 5px lightblue;
+}
+.jcode{
+  transform: scaleY(10deg);
+}
+/*need to write media queires to make cards smaller on smaller screens... phone view port only fits 1 card per row atm*/
+@media screen and (max-width < 1300){
+.card{
+  max-width: 15%;
+}
+.card > img{
+  
+}
+}
