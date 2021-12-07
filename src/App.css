@@ -82,14 +82,16 @@ body{
 .card{
   width:30%;
   height: 30%;
-
+  font-size: x-large;
 }
 .card > img{
   object-fit: scale-down;
 }
 }
 @media only screen and (max-width: 700px){
-  
+  .card{
+    font-size: large;
+  }
   .card > img{
     object-fit: scale-down;
   }
