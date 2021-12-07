@@ -46,11 +46,19 @@ body{
   transform: scaleY(10deg);
 }
 /*need to write media queires to make cards smaller on smaller screens... phone view port only fits 1 card per row atm*/
-@media screen and (max-width < 1300){
+@media only screen and (max-width:  1300px){
 .card{
-  max-width: 15%;
+  width:30%;
+  height: 30%;
+
 }
 .card > img{
+  object-fit: scale-down;
+}
+}
+@media only screen and (max-width: 700px){
   
-}
-}
+  .card > img{
+    object-fit: scale-down;
+  }
+  }
