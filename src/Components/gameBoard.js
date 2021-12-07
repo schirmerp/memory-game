@@ -9,6 +9,7 @@ function GameBoard(props) {
     const [highScore, setHighScore] = useState(0)
     const [board, setBoard] = useState([])
     const [gameOver, setGameOver] = useState(null)
+    const [gameCN, setGameCN] = useState('gameOver')
     
 
     function shuffle(array) {
@@ -19,6 +20,7 @@ function GameBoard(props) {
         setSquares(squares => [...rmData])
         setBoard(prevState => [])
         setScore(prevState => 0)
+        setGameCN(prevState => "gameOver")
     }
 
     const onClick = (e)=>{
@@ -35,8 +37,10 @@ function GameBoard(props) {
     const endGame = () =>{
         if(score > highScore){
             setHighScore(prevState => score)
+            setGameCN(prevState => "gameOver-appear")
             setGameOver(prevState => "Congratulations!! You have a New High Score "  + score + "!")
         }else{
+            setGameCN(prevState => "gameOver-appear")
             setGameOver(prevState => "Game Over! Try Again!")
         }
     }
@@ -48,7 +52,7 @@ function GameBoard(props) {
 
     return(
         <>
-            <Header score={score} highScore={highScore} gameOver={gameOver}/>
+            <Header score={score} highScore={highScore} gocn={gameCN}gameOver={gameOver}/>
             <div id="game-board">
                {squares.map((data, key)=>{
                    return(
